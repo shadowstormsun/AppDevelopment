@@ -9,6 +9,7 @@ class BankAC {
   void withdraw(double amount) {
     if (amount <= balance) {
       balance -= amount;
+      print("Withdrawal successful. Current Balance : $balance");
     } else {
       print("Insufficient funds. Current Balance : $balance");
     }
